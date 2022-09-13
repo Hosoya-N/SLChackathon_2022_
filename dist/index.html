@@ -1,15 +1,91 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Parcel Sandbox</title>
-    <meta charset="UTF-8">
-  <link rel="stylesheet" href="/src.a2b27638.css"></head>
-
-  <body>
-    <h5>細谷が描いたよ</h5>
-
-    <div id="app"></div>
-
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="/src.a2b27638.js"></script>
+    <title>みんなの失敗談</title>
+    <!-- BootStrapのCSSの読み込み -->
+    <link rel="stylesheet" href="/bootstrap.min.108cc16f.css">
+  <link rel="stylesheet" href="/src.a2b27638.css"><script src="/bootstrap.min.108cc16f.js"></script></head>
+  
+  <body>
+    <h1 class="m-3">みんなの失敗談</h1>
+   
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            失敗談タイトル１
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>（概要）こんな失敗がありました…。</strong>
+            <p>（詳細）なんやかんやこんなことがあって大変だったよ。みんなも気をつけよ。</p>
+            <button type="button" class="btn btn-primary" id="btnAdd">
+              いいね <span class="badge bg-light text-dark" id="counter">4</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            失敗談タイトル２
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>（概要）こんな失敗がありました…。</strong>
+            <p>（詳細）なんやかんやこんなことがあって大変だったよ。みんなも気をつけよ。</p>
+            <button type="button" class="btn btn-primary">参考になった</button>
+            <button type="button" class="btn btn-success">お疲れ</button>
+            <button type="button" class="btn btn-danger">やばいね</button>
+            <button type="button" class="btn btn-secondary">神</button></div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            失敗談タイトル３
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>（概要）こんな失敗がありました…。</strong>
+            <p>（詳細）なんやかんやこんなことがあって大変だったよ。みんなも気をつけよ。</p>
+            <button type="button" class="btn btn-primary">参考になった</button>
+            <button type="button" class="btn btn-success">お疲れ</button>
+            <button type="button" class="btn btn-danger">やばいね</button>
+            <button type="button" class="btn btn-secondary">神</button></div>
+        </div>
+      </div>
+    </div>
+
+    <h4 class="m-3">新しい投稿お待ちしています</h4>
+ 
+    <form>
+      <div class="m-3">
+        <label for="input1" class="form-label">タイトル</label>
+        <input type="input" class="form-control" id="input1">
+      </div>
+      <div class="m-3">
+        <label for="input2" class="form-label">概要</label>
+        <textarea type="input" "="" class="form-control" id="input2" rows="1">
+      </textarea></div>
+      <div class="m-3">
+        <label for="input3" class="form-label">詳細</label>
+        <textarea type="input" class="form-control" id="input3" rows="5">
+      </textarea></div>
+      <div class="m-3">
+        <button type="submit" class="btn btn-primary">投稿！</button>
+      </div>
+    </form>
+ 
+    <!-- BootStrapのJSの読み込み -->
+    <script src="/bootstrap.min.fdb78abe.js"></script>
+    
   </body>
 </html>
