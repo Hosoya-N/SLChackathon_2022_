@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
   <head>
     <!-- Required meta tags -->
@@ -13,19 +13,49 @@
   <body>
     <h1 class="m-3">みんなの失敗談</h1>
    
+    <div class="row">
+        
+    <div class="col-4">
+     <div class="grid">
+      <h4 class="m-3">投稿者ランキング</h4>
+        <ul class="list-group">
+         <li class="list-group-item d-flex justify-content-between align-items-center">
+             <span class="badge bg-primary rounded-pill">1位</span>
+             <span>佐藤</span>
+        <span class="badge bg-primary rounded-pill">1402いいね！</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span class="badge bg-primary rounded-pill">2位</span>
+            <span>田中</span>
+        <span class="badge bg-primary rounded-pill">833いいね！</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span class="badge bg-primary rounded-pill">3位</span>
+            <span>山田</span>
+        <span class="badge bg-primary rounded-pill">379いいね！</span>
+        </li>
+       </ul>
+     </div>
+    </div>
+
+    <div class="col-8">
+    <div class="grid"></div>
+    <h4 class="m-3">失敗談一覧</h4>
+   
     <div class="accordion" id="accordionExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            失敗談タイトル１
+          失敗談タイトル１
           </button>
         </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>（概要）こんな失敗がありました…。</strong>
-            <p>（詳細）なんやかんやこんなことがあって大変だったよ。みんなも気をつけよ。</p>
-            <button type="button" class="btn btn-primary" id="btnAdd">
-              いいね <span class="badge bg-light text-dark" id="counter">4</span>
+            <p>（内容）なんやかんやこんなことがあって大変だったよ。みんなも気をつけよ。</p>
+            <p>（時間）2022.9.13</p>
+            <p>（ユーザ名）高橋</p>
+            <button type="button" class="btn btn-primary" id="btnAdd1">
+              いいね <span class="badge bg-light text-dark" id="counter1">4</span>
             </button>
           </div>
         </div>
@@ -38,12 +68,12 @@
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>（概要）こんな失敗がありました…。</strong>
-            <p>（詳細）なんやかんやこんなことがあって大変だったよ。みんなも気をつけよ。</p>
-            <button type="button" class="btn btn-primary">参考になった</button>
-            <button type="button" class="btn btn-success">お疲れ</button>
-            <button type="button" class="btn btn-danger">やばいね</button>
-            <button type="button" class="btn btn-secondary">神</button></div>
+            <p>（内容）なんやかんやこんなことがあって大変だったよ。みんなも気をつけよ。</p>
+            <p>（時間）2022.9.13</p>
+            <p>（ユーザ名）折田</p>
+            <button type="button" class="btn btn-primary" id="btnAdd2">
+              いいね <span class="badge bg-light text-dark" id="counter2">24</span>
+            </button>
         </div>
       </div>
       <div class="accordion-item">
@@ -54,31 +84,34 @@
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>（概要）こんな失敗がありました…。</strong>
-            <p>（詳細）なんやかんやこんなことがあって大変だったよ。みんなも気をつけよ。</p>
-            <button type="button" class="btn btn-primary">参考になった</button>
-            <button type="button" class="btn btn-success">お疲れ</button>
-            <button type="button" class="btn btn-danger">やばいね</button>
-            <button type="button" class="btn btn-secondary">神</button></div>
+            <p>（内容）なんやかんやこんなことがあって大変だったよ。みんなも気をつけよ。</p>
+            <p>（時間）2022.9.13</p>
+            <p>（ユーザ名）細谷</p>
+            <button type="button" class="btn btn-primary" id="btnAdd3">
+              いいね <span class="badge bg-light text-dark" id="counter3">16</span>
+            </button>
         </div>
       </div>
     </div>
+</div>
+</div> 
+</div> 
 
     <h4 class="m-3">新しい投稿お待ちしています</h4>
  
     <form>
       <div class="m-3">
-        <label for="input1" class="form-label">タイトル</label>
+        <label for="input1" class="form-label">名前</label>
         <input type="input" class="form-control" id="input1">
       </div>
       <div class="m-3">
-        <label for="input2" class="form-label">概要</label>
-        <textarea type="input" "="" class="form-control" id="input2" rows="1">
-      </textarea></div>
+        <label for="input2" class="form-label">タイトル</label>
+        <input type="input" "="" class="form-control" id="input2">
+      </div>
       <div class="m-3">
-        <label for="input3" class="form-label">詳細</label>
-        <textarea type="input" class="form-control" id="input3" rows="5">
-      </textarea></div>
+        <label for="input3" class="form-label">内容</label>
+        <textarea type="input" class="form-control" id="input3" rows="5"></textarea>
+      </div>
       <div class="m-3">
         <button type="submit" class="btn btn-primary">投稿！</button>
       </div>
@@ -87,5 +120,5 @@
     <!-- BootStrapのJSの読み込み -->
     <script src="/bootstrap.min.fdb78abe.js"></script>
     
-  </body>
+  </div></body>
 </html>
