@@ -194,20 +194,50 @@ module.hot.accept(reloadCSS);
 
 require("./styles.css");
 
-var counter, btnAdd;
-var n;
+var counter1, btnAdd1;
+var n1;
 
-function addCount() {
-  n++;
-  counter.innerHTML = n;
+function addCount1() {
+  n1++;
+  counter1.innerHTML = n1;
 }
 
 window.addEventListener("load", function () {
   // 起動時の処理
-  counter = document.getElementById("counter");
-  btnAdd = document.getElementById("btnAdd");
-  n = counter.innerHTML;
-  btnAdd.addEventListener("click", addCount);
+  counter1 = document.getElementById("counter1");
+  btnAdd1 = document.getElementById("btnAdd1");
+  n1 = counter1.innerHTML;
+  btnAdd1.addEventListener("click", addCount1);
+});
+var counter2, btnAdd2;
+var n2;
+
+function addCount2() {
+  n2++;
+  counter2.innerHTML = n2;
+}
+
+window.addEventListener("load", function () {
+  // 起動時の処理
+  counter2 = document.getElementById("counter2");
+  btnAdd2 = document.getElementById("btnAdd2");
+  n2 = counter2.innerHTML;
+  btnAdd2.addEventListener("click", addCount2);
+});
+var counter3, btnAdd3;
+var n3;
+
+function addCount3() {
+  n3++;
+  counter3.innerHTML = n3;
+}
+
+window.addEventListener("load", function () {
+  // 起動時の処理
+  counter3 = document.getElementById("counter3");
+  btnAdd3 = document.getElementById("btnAdd3");
+  n3 = counter3.innerHTML;
+  btnAdd3.addEventListener("click", addCount3);
 });
 },{"./styles.css":"src/styles.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -237,8 +267,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37439" + '/');
-
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36029" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
