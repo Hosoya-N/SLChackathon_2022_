@@ -5,7 +5,7 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<script src="src/index.js"></script>
+	<!-- <script src="src/index.js"></script> -->
 	<title>Winwinwin</title>
 	<!-- BootStrapのCSSの読み込み -->
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -19,7 +19,7 @@
 		<div class="col-4">
 			<div class="grid">
 				<h4 class="m-3">投稿者ランキング</h4>
-				<ul id="ranking" class="list-group">
+				<ul id="ranking" class="list-group m-3">
 				</ul>
 			</div>
 		</div>
@@ -28,71 +28,7 @@
 			<h4 class="m-3">投稿一覧</h4>
 
 			<div class="accordion m-3" id="accordionExample">
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="headingOne">
-						<button class="accordion-button collapsed"
-						        type="button"
-								data-bs-toggle="collapse"
-							    data-bs-target="#collapseOne"
-								aria-expanded="true"
-								aria-controls="collapseOne">
-							失敗談タイトル１
-						</button>
-					</h2>
-					<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-						data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							<p>（内容）なんやかんやこんなことがあって大変だったよ。みんなも気をつけよ。</p>
-							<p>（時間）2022.9.13</p>
-							<p>（ユーザ名）高橋</p>
-							<button type="button" class="btn btn-primary" id="btnAdd1">
-								いいね <span class="badge bg-light text-dark" id="counter1">4</span>
-							</button>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="headingTwo">
-						<button class="accordion-button collapsed"
-						        type="button"
-								data-bs-toggle="collapse"
-							    data-bs-target="#collapseTwo"
-								aria-expanded="false"
-								aria-controls="collapseTwo">
-							失敗談タイトル２
-						</button>
-					</h2>
-					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-						data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							<p>（内容）なんやかんやこんなことがあって大変だったよ。みんなも気をつけよ。</p>
-							<p>（時間）2022.9.13</p>
-							<p>（ユーザ名）折田</p>
-							<button type="button" class="btn btn-primary" id="btnAdd2">
-								いいね <span class="badge bg-light text-dark" id="counter2">24</span>
-							</button>
-						</div>
-					</div>
-				</div>	
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="headingThree">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-							失敗談タイトル３
-						</button>
-					</h2>
-					<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-						data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							<p>（内容）なんやかんやこんなことがあって大変だったよ。みんなも気をつけよ。</p>
-							<p>（時間）2022.9.13</p>
-							<p>（ユーザ名）細谷</p>
-							<button type="button" class="btn btn-primary" id="btnAdd3">
-								いいね <span class="badge bg-light text-dark" id="counter3">16</span>
-							</button>
-						</div>
-					</div>
-				</div>
+
 			</div>
 		</div>
 		<h4 class="m-3">新しい投稿お待ちしています</h4>
@@ -121,4 +57,5 @@
 </body>
 <!-- <script src="src/contents.js"></script> -->
 <script src="src/ranking.js"></script>
+<script src="src/contents.js"></script>
 </html>
