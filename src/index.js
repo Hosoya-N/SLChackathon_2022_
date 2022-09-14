@@ -1,5 +1,3 @@
-// import "./styles.css";
-
 
 let counter, btnAdd;
 let n;
